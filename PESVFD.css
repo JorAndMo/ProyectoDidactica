@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Macondo&family=Roboto+Flex:opsz,wght@8..144,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tapestry&display=swap');
+
+/* PSEUDOCLASES */
+* { /* El asterisco aplica estilos a la hoja en generar*/
+    
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+main {
+ height: 100vh;
+
+}
+
+#logo {
+    height: 70px; 
+    
+    } 
+
+
+body{
+  display:flex;
+  flex-direction:column;
+}
+
+nav {
+    z-index: 1;
+    top:0;
+    margin: 0;
+    position: fixed;
+    width: 100%;
+    background: white;
+    backdrop-filter: blur(10px);
+    
+  }
+  
+  nav ul{
+    padding: 5px;
+    font-family: 'Tapestry', cursive;
+    display:flex;
+    justify-content: space-around;
+    }
+   
+  nav ul a{
+    text-decoration: none; /* le quita la línea y el color de hipervinculo */
+    color:rgb(0, 0, 0);
+  }  
+  
+  nav ul a:hover{
+    background-color:#0a4a69;
+    color:#ffffff;
+  }
+
+#box1{
+    z-index: -1;
+    padding:30px;
+    height:80vh;
+    background-image: url("assets/Fondo5_.jpg");
+background-position: center;
+background-size: auto;
+    border: solid rgb(9, 9, 15) 2px;
+}
+
+#options{
+    padding: 100px;
+    margin: 100px;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height:50vh;
+    background: white;
+    border: solid rgb(219, 23, 23) 2px;
+}
+
+h1{
+    z-index: 1;
+   padding-top: 0%;
+   margin-top:0%;
+    font-family: 'Macondo', cursive;
+    color: black;
+
+  }
+
+
+
+
+

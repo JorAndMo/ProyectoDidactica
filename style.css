@@ -1,0 +1,490 @@
+@import url('https://fonts.googleapis.com/css2?family=Macondo&family=Roboto+Flex:opsz,wght@8..144,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tapestry&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&family=Roboto+Serif:opsz,wght@8..144,100&family=Ubuntu:wght@300&display=swap')
+/* PSEUDOCLASES */
+* { /* El asterisco aplica estilos a la hoja en generar*/
+    
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+main {
+ height: 100vh;
+
+}
+
+body{
+  margin:0;
+  display:flex;
+  flex-direction:column;
+}
+
+#logo {
+  height: 70px; 
+  
+  } 
+
+#vial {
+    height: 75%; 
+    align-items: center; 
+    } 
+
+#sst{
+      height: 45%; 
+      align-content: center;
+    }
+
+#imgAuditoria{
+  width: 90%;  
+
+}
+
+nav {
+  z-index: 1;
+  top:0;
+  margin: 0;
+  position: fixed;
+  width: 100%;
+  background: white;
+  backdrop-filter: blur(10px);
+  
+}
+
+nav ul{
+  padding: 5px;
+  font-family: 'Tapestry', cursive;
+  display:flex;
+  justify-content: space-around;
+  }
+ 
+nav ul a{
+  text-decoration: none; /* le quita la línea y el color de hipervinculo */
+  color:rgb(0, 0, 0);
+}  
+
+nav ul a:hover{
+  background-color:#0a4a69;
+  color:#ffffff;
+}
+
+/* From uiverse.io by @ercnersoy */
+#videopopup{
+  padding: 0.2em 1.6em;
+  border: 0;
+  transition: all .5s ease-in-out;
+  font-size: 17px;
+  letter-spacing: 0.1rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(0, 0, 0);
+  font-weight: bolder;
+  backdrop-filter: blur(5px);
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 26px;
+  box-shadow: 0px 0px 0px 0px rgba(145, 192, 255, 0.5),
+              inset -8px -8px 16px 0px rgba(145, 193, 255, 0.973),
+              inset 0px 11px 28px 0px rgb(255, 255, 255);
+ }
+ 
+ #videopopup:hover {
+  transition: all .5s ease-in-out;
+  backdrop-filter: blur(5px);
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 26px;
+  box-shadow: 0px 0px 0px 0px rgba(145, 192, 255, 0.5),
+               inset 8px -8px 16px 10px rgb(145, 193, 255),
+               inset 0px 11px 28px 0px rgb(255, 255, 255);
+ }
+ 
+ #videopopup:active {
+  border-radius: 26px;
+  box-shadow: 0px 0px 0px 0px rgba(145, 193, 255, 0.822),
+   inset -8px -8px 16px 10px #91c0ff99,
+   inset 0px 11px 28px 50px rgb(255, 255, 255);
+ }
+
+ .popup{
+   width: 75%;
+   position: absolute; /* se posiciona sobre el contenedor */
+   margin: 0 auto;
+   top:0;
+   left:70%;
+   transform: translate(-50%, -50%) scale(0.1); /*scale me reduce el tamaño del video*/
+   transition: transform 0.4s, top 0.4s;
+   visibility: hidden; /*oculta el video*/
+ }
+
+ .popup iframe{
+   width: 100;
+   margin: 0 auto;
+ }
+
+ .open-popup{
+  
+   visibility: visible;
+   top: 200%;
+   transform: translate(-50%, -50%) scale(1);
+/*me muestra el video y hace que baje y aumente el tamaño*/
+ }
+
+/* From uiverse.io by @bhaveshxrawat */
+.card {
+  z-index: 0;
+  width: 250px;
+  height: 300px;
+  background: #f9f9f9;
+  position: relative;
+  align-items: center;
+
+  padding: .4em;
+  padding-top: .8em;
+  border-radius: 20px;
+  
+}
+
+.card-image {
+  background-color: rgb(236, 236, 236);
+  width: 100%;
+  height: 60%;
+  align-items: center;
+  border-radius: 6px 6px 0 0;
+  transform: scale(0.75);
+}
+
+.card-image:hover {
+  transform: scale(1);
+}
+
+.category {
+  text-transform: uppercase;
+  font-size: 1em;
+  font-weight: 600;
+  color: rgb(8, 40, 99);
+  padding: 10px 7px 0;
+}
+
+.card h2 {
+  z-index: 1;
+  color: rgb(0, 0, 7);
+  text-align:center;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2em;
+}
+
+ 
+ /* From uiverse.io by @abrahamcalsin */
+.plan-card {
+  /*background-image: linear-gradient(to right top, #f3efef, #353b6e, #ffffff, #43697c,  #f6f7f7);*/
+  background: white;;
+  width: 23rem;
+  height: 350px;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  border-radius: 10px;
+  border-bottom: 4px solid #000446;
+  box-shadow: 0 6px 30px rgba(207, 212, 222, 0.3);
+  font-family: "Poppins", sans-serif;
+}
+
+.plan-card h2 {
+  margin-bottom: 15px;
+  font-size: 27px;
+  font-weight: 600;
+}
+
+.plan-card h2 span {
+  display: block;
+  margin-top: -4px;
+  color: rgb(207, 32, 32);
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.plan-card p {
+  font-size: 25px;
+}
+
+.etiquet div {
+  position: absolute;
+  bottom: -23px;
+  right: 0px;
+  width: 0;
+  height: 0;
+  border-top: 13px solid rgb(2, 13, 33);
+  border-bottom: 10px solid transparent;
+  border-right: 13px solid transparent;
+  z-index: -6;
+}
+
+.benefits-list {
+  margin-top: 16px;
+}
+
+.benefits-list ul {
+  padding: 0;
+  font-size: 14px;
+}
+
+.benefits-list ul li {
+  color: #4d4d4d;
+  list-style: none;
+  margin-bottom: .2rem;
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+
+.benefits-list ul li svg {
+  width: .9rem;
+  fill: currentColor;
+}
+
+.benefits-list ul li span {
+  font-weight: 300;
+}
+
+.button-get-plan {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.2rem;
+}
+
+.button-get-plan a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #d21111;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: .8rem;
+  letter-spacing: .05rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.button-get-plan a:hover {
+  transform: translateY(-10%);
+  box-shadow: 0 3px 10px rgba(207, 212, 222, 0.9);
+}
+
+.button-get-plan .svg-rocket {
+  margin-right: 10px;
+  width: .9rem;
+  fill: currentColor;
+}
+
+  .botonIr{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #d21111;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: .8rem;
+    letter-spacing: .05rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+  }
+
+  .botonIr:hover{
+    opacity: 0.7;
+    text-decoration: none;
+    color:rgb(252, 252, 255)
+  }
+
+
+li{
+  list-style:none;
+  align-items: center;
+  font-size:20px;
+  padding: 0.5rem 2rem 0.5rem 2rem;
+}
+
+section{
+  padding:3em;
+  align-items: center;
+  justify-content: center; 
+}
+
+.etiquet p{
+  margin:8px 8px 8px 8px;
+  font-size: 1vw;
+  justify-content: center;
+  text-align:center;
+  padding: 0.5em;
+  border: solid black 2px; 
+}
+
+.texto1{  
+  color: black;
+  text-align: justify;  
+}
+/*titulo de secciones*/
+h1{
+  text-align:center;
+  font-family: 'Ubuntu', sans-serif;
+  color: black;
+  border-radius: 50px;
+  background-color: white;
+justify-content: center;  
+}
+
+h3{
+  text-align:center;
+  color: #000000;
+background: #FFFFFF;
+text-shadow: 2px 2px 0 #bcbcbc, 4px 4px 0 #9c9c9c;
+}
+
+#botones {
+  align-items: center;
+  padding: 1rem 4rem 0.5rem 2rem;
+  display: flex;
+}
+
+#box1 {
+  display: flexbox;
+  margin:auto;
+  font-family: 'Roboto Flex', sans-serif;
+  background-image: linear-gradient(to right top, #090909, #10174a, #25a6bd, #0a4a69,  #0d6c32);
+    padding: 200px;
+    flex-wrap: wrap;
+    align-items: center;
+  justify-content: center;
+    border: solid rgb(9, 9, 15) 2px;
+    /*height:100vh;*/
+}
+
+#box1 h2{
+  font-family: 'Ubuntu', cursive;
+  color: black;
+}
+/*párrafo introductorio para navegar en la página*/
+.intro {
+  color:white;
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 24px;
+  text-align:justify;
+  font-weight: bolder;
+  line-height: 30px;
+}
+
+.row{
+  display:flex;
+  margin: 30px 0;
+}
+/*Objetivo del aplicativo*/
+.row .textleft{
+  background-color: white;
+  border-radius: 50px;
+  font-family: 'Rajdhani', sans-serif;
+  text-align:justify;
+  width: 80%;
+  padding: 0 60px;
+  line-height: 30px;
+  text-align: left;
+}
+
+.row p{
+  font-size:20px;
+  text-align:justify;
+  
+}
+
+.row .textright{
+  background-color: white;
+  border-radius: 50px;
+  font-family: 'Rajdhani', sans-serif;
+  width: 80%;
+  padding: 0 60px;
+  line-height: 30px;
+  text-align: right;
+}
+
+.row .img{
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.row .img img{
+  position:relative;
+  width:200px;
+}
+
+#box2 {
+    padding:30px;
+ 
+    height:80vh;
+    background-image: url("assets/Fondo5_.jpg");
+background-position: center;
+background-size: auto;
+    border: solid rgb(9, 9, 15) 2px;
+}
+
+#box3 {
+  padding:30px;
+
+  height:80vh;
+  background-image: url("assets/Fondo2__.jpg");
+background-position: center;
+background-size: 500px;
+  border: solid rgb(9, 9, 15) 2px;
+}
+
+#box4 {
+  padding:30px;
+
+  height:80vh;
+  background-image: url("assets/Fondo3_.jpg");
+background-position: center;
+background-size:600px;
+  border: solid rgb(9, 9, 15) 2px;
+}
+
+
+#didactic{
+  display: flex;
+   align-items: center;
+  justify-content: center;
+  padding:20PX;
+  gap:100px;
+}
+
+#cont{
+  display:flex;
+  padding: 20px;
+  justify-content: center;
+  gap:100px;
+}
+
+.caja {
+  
+   background: white;
+ 
+    width:50%;
+    border: solid green 2px;
+}
+
+
+footer {
+    border:solid rgb(13, 13, 13) 2px;
+}
+/*Si llega a 320px cambia a esta propiedad */
+@media screen and (max-width: 320px){
+  #box1 {
+    flex-direction:column; 
+    background: blue;
+  }
+    nav ul{
+      flex-direction:column; 
+    }
+      
+}
