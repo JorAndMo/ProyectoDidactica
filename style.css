@@ -1,14 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Macondo&family=Roboto+Flex:opsz,wght@8..144,100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Tapestry&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&family=Roboto+Serif:opsz,wght@8..144,100&family=Ubuntu:wght@300&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&family=Roboto+Serif:opsz,wght@8..144,100&family=Ubuntu:wght@300&display=swap');
 /* PSEUDOCLASES */
-/* El asterisco aplica estilos a la hoja en generar*/
-* { 
+
+* { /* El asterisco aplica estilos a la hoja en generar*/
     
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
+
 
 main {
  height: 100vh;
@@ -28,7 +29,9 @@ body{
 
 #vial {
     height: 75%; 
-    align-items: center; 
+    align-items: center;
+    justify-content: center;
+    
     } 
 
 #sst{
@@ -131,7 +134,7 @@ nav ul a:hover{
 /* From uiverse.io by @bhaveshxrawat */
 .card {
   z-index: 0;
-  width: 250px;
+  width: 23rem;
   height: 300px;
   background: #f9f9f9;
   position: relative;
@@ -160,19 +163,30 @@ nav ul a:hover{
   text-transform: uppercase;
   font-size: 1em;
   font-weight: 600;
-  color: rgb(8, 40, 99);
+  color: Black;
   padding: 10px 7px 0;
 }
 
-.card h2 {
-  z-index: 1;
-  color: rgb(0, 0, 7);
-  text-align:center;
-  font-family: "Poppins", sans-serif;
-  font-size: 1.2em;
+.botonIr{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #d21111;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 15px;
+  font-size: .9rem;
+  letter-spacing: .05rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
 }
 
- 
+.botonIr:hover{
+  opacity: 0.7;
+  text-decoration: none;
+  color:rgb(252, 252, 255)
+}
+
  /* From uiverse.io by @abrahamcalsin */
 .plan-card {
   /*background-image: linear-gradient(to right top, #f3efef, #353b6e, #ffffff, #43697c,  #f6f7f7);*/
@@ -204,12 +218,12 @@ nav ul a:hover{
 }
 
 .plan-card p {
-  font-size: 25px;
+  font-size: 50px;
 }
 
 .etiquet div {
   position: absolute;
-  bottom: -23px;
+    bottom: -23px;
   right: 0px;
   width: 0;
   height: 0;
@@ -218,6 +232,7 @@ nav ul a:hover{
   border-right: 13px solid transparent;
   z-index: -6;
 }
+
 
 .benefits-list {
   margin-top: 16px;
@@ -276,28 +291,7 @@ nav ul a:hover{
   margin-right: 10px;
   width: .9rem;
   fill: currentColor;
-}
-
-  .botonIr{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #d21111;
-    color: #fff;
-    padding: 10px 15px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-size: .8rem;
-    letter-spacing: .05rem;
-    font-weight: 500;
-    transition: all 0.3s ease;
-  }
-
-  .botonIr:hover{
-    opacity: 0.7;
-    text-decoration: none;
-    color:rgb(252, 252, 255)
-  }
+} 
 
 
 li{
@@ -419,6 +413,39 @@ text-shadow: 2px 2px 0 #bcbcbc, 4px 4px 0 #9c9c9c;
   position:relative;
   width:200px;
 }
+
+.efect1{
+  right:40px;
+  animation:girar 3s linear infinite;
+}
+.efect2{
+  left:40px;
+  animation:efecto2 3s linear infinite;
+}
+
+@keyframes bajar{
+ 0%{top:0;}
+ 50%{top:15px}
+ 100%{top:0;}
+}
+@keyframes efecto2{
+  0%{transform: scale(.9);}
+  50%{transform:scale(1.1);}
+  100%{transform:scale(.9);}
+}
+
+/*
+@keyframes mover{
+  0%{left:0;}
+  50%{left: 40px}
+  100%{left: 0;}
+*/
+@keyframes girar{
+  0%{transform: rotate(0deg);}
+  50%{transform:rotate(20deg);}
+  100%{transform:rotate(0deg);}
+}
+
 
 #box2 {
     padding:30px;
