@@ -69,6 +69,7 @@ nav ul a{
 
 nav ul a:hover{
   background-color:#0a4a69;
+  border-radius: 10px;
   color:#ffffff;
 }
 
@@ -131,12 +132,130 @@ nav ul a:hover{
 /*me muestra el video y hace que baje y aumente el tamaño*/
  }
 
+
+ 
+#box1 {
+  display: flexbox;
+  margin:auto;
+  font-family: 'Roboto Flex', sans-serif;
+ /* background-image: linear-gradient(to right top, #090909, #10174a, #25a6bd, #0a4a69,  #0d6c32);*/
+    padding: 200px;
+    flex-wrap: wrap;
+    align-items: center;
+  justify-content: center;
+    border: solid rgb(9, 9, 15) 2px;
+    /*height:100vh;*/
+}
+
+h2{
+  font-family: 'Ubuntu', cursive;
+  color: black;
+}
+
+/*párrafo introductorio para navegar en la página*/
+.intro {
+  
+  color:black;
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 24px;
+  text-align:justify;
+  font-weight: bolder;
+  line-height: 30px;
+}
+
+.row{
+  display:flex;
+  margin: 30px 0;
+}
+/*Objetivo del aplicativo*/
+.row .textleft{
+  background-color: #0a4a69;
+  color:white;
+  border-radius: 50px;
+  font-family:'Rajdhani', sans-serif;
+  text-align:justify;
+  width: 80%;
+  padding: 0 60px;
+  line-height: 30px;
+  text-align: left;
+}
+
+.row h2{
+  color:white;
+}
+
+.row p{
+  font-size:20px;
+  text-align:justify;
+  
+}
+
+.row .textright{
+  background-color: #0a4a69;
+  color:white;
+  border-radius: 50px;
+  font-family:'Rajdhani', sans-serif;
+  width: 80%;
+  padding: 0 60px;
+  line-height: 30px;
+  text-align: right;
+}
+
+.row .img{
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.row .img img{
+  position:relative;
+  width:200px;
+}
+
+.efect1{
+  right:40px;
+  animation:girar 3s linear infinite;
+}
+.efect2{
+  left:40px;
+  animation:efecto2 3s linear infinite;
+}
+
+@keyframes bajar{
+ 0%{top:0;}
+ 50%{top:15px}
+ 100%{top:0;}
+}
+@keyframes efecto2{
+  0%{transform: scale(.9);}
+  50%{transform:scale(1.1);}
+  100%{transform:scale(.9);}
+}
+
+/*
+@keyframes mover{
+  0%{left:0;}
+  50%{left: 40px}
+  100%{left: 0;}
+*/
+@keyframes girar{
+  0%{transform: rotate(0deg);}
+  50%{transform:rotate(20deg);}
+  100%{transform:rotate(0deg);}
+}
+
+
+
+
+
 /* From uiverse.io by @bhaveshxrawat */
 .card {
   z-index: 0;
   width: 23rem;
   height: 300px;
-  background: #f9f9f9;
+  border-bottom: 4px solid black;
+  background: #e3e4de;
   position: relative;
   align-items: center;
 
@@ -147,7 +266,7 @@ nav ul a:hover{
 }
 
 .card-image {
-  background-color: rgb(236, 236, 236);
+  background-color: white;
   width: 100%;
   height: 60%;
   align-items: center;
@@ -172,13 +291,8 @@ nav ul a:hover{
   justify-content: center;
   align-items: center;
   background: #d21111;
-  color: #fff;
-  padding: 10px 15px;
   border-radius: 15px;
-  font-size: .9rem;
-  letter-spacing: .05rem;
-  font-weight: 500;
-  transition: all 0.3s ease;
+  
 }
 
 .botonIr:hover{
@@ -186,6 +300,35 @@ nav ul a:hover{
   text-decoration: none;
   color:rgb(252, 252, 255)
 }
+
+.botonIr a {
+  color: #fff;
+  padding: 10px 15px;
+
+  font-size: .9rem;
+  letter-spacing: .05rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+
+
+#box2 {
+  padding:30px;
+
+  margin:auto;
+  background-image: url("assets/Fondo5_.jpg");
+background-position: center;
+background-size: auto;
+  border: solid rgb(9, 9, 15) 2px;
+}
+
+#videoVialIntro {
+  text-align:center;
+  margin: 30px;
+}
+
+
 
  /* From uiverse.io by @abrahamcalsin */
 .plan-card {
@@ -343,124 +486,12 @@ text-shadow: 2px 2px 0 #bcbcbc, 4px 4px 0 #9c9c9c;
   display: flex;
 }
 
-#box1 {
-  display: flexbox;
-  margin:auto;
-  font-family: 'Roboto Flex', sans-serif;
-  background-image: linear-gradient(to right top, #090909, #10174a, #25a6bd, #0a4a69,  #0d6c32);
-    padding: 200px;
-    flex-wrap: wrap;
-    align-items: center;
-  justify-content: center;
-    border: solid rgb(9, 9, 15) 2px;
-    /*height:100vh;*/
-}
 
-#box1 h2{
-  font-family: 'Ubuntu', cursive;
-  color: black;
-}
-/*párrafo introductorio para navegar en la página*/
-.intro {
-  color:white;
-  font-family: 'Rajdhani', sans-serif;
-  font-size: 24px;
-  text-align:justify;
-  font-weight: bolder;
-  line-height: 30px;
-}
-
-.row{
-  display:flex;
-  margin: 30px 0;
-}
-/*Objetivo del aplicativo*/
-.row .textleft{
-  background-color: white;
-  border-radius: 50px;
-  font-family: 'Rajdhani', sans-serif;
-  text-align:justify;
-  width: 80%;
-  padding: 0 60px;
-  line-height: 30px;
-  text-align: left;
-}
-
-.row p{
-  font-size:20px;
-  text-align:justify;
-  
-}
-
-.row .textright{
-  background-color: white;
-  border-radius: 50px;
-  font-family: 'Rajdhani', sans-serif;
-  width: 80%;
-  padding: 0 60px;
-  line-height: 30px;
-  text-align: right;
-}
-
-.row .img{
-  width: 20%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.row .img img{
-  position:relative;
-  width:200px;
-}
-
-.efect1{
-  right:40px;
-  animation:girar 3s linear infinite;
-}
-.efect2{
-  left:40px;
-  animation:efecto2 3s linear infinite;
-}
-
-@keyframes bajar{
- 0%{top:0;}
- 50%{top:15px}
- 100%{top:0;}
-}
-@keyframes efecto2{
-  0%{transform: scale(.9);}
-  50%{transform:scale(1.1);}
-  100%{transform:scale(.9);}
-}
-
-/*
-@keyframes mover{
-  0%{left:0;}
-  50%{left: 40px}
-  100%{left: 0;}
-*/
-@keyframes girar{
-  0%{transform: rotate(0deg);}
-  50%{transform:rotate(20deg);}
-  100%{transform:rotate(0deg);}
-}
-
-
-#box2 {
-    padding:30px;
- 
-    height:80vh;
-    background-image: url("assets/Fondo5_.jpg");
-background-position: center;
-background-size: auto;
-    border: solid rgb(9, 9, 15) 2px;
-}
 
 #box3 {
   padding:30px;
 
-  height:80vh;
+  margin:auto;
   background-image: url("assets/Fondo2__.jpg");
 background-position: center;
 background-size: 500px;
@@ -469,8 +500,7 @@ background-size: 500px;
 
 #box4 {
   padding:30px;
-
-  height:80vh;
+  margin:auto;
   background-image: url("assets/Fondo3_.jpg");
 background-position: center;
 background-size:600px;
