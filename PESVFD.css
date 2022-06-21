@@ -1,9 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Macondo&family=Roboto+Flex:opsz,wght@8..144,100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Tapestry&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&family=Roboto+Serif:opsz,wght@8..144,100&family=Ubuntu:wght@300&display=swap');
-
 /* PSEUDOCLASES */
- 
+
 * { /* El asterisco aplica estilos a la hoja en generar*/
     
   box-sizing: border-box;
@@ -11,10 +10,8 @@
   margin: 0;
 }
 
-
 main {
  height: 100vh;
-
 }
 
 body{
@@ -24,8 +21,7 @@ body{
 }
 
 #logo {
-  height: 70px; 
-  
+  height: 70px;   
   } 
 
 nav ul{
@@ -54,7 +50,6 @@ li{
   padding: 0.5rem 8.5rem 0.5rem 2rem;
 }
 
-
  #main .carousel-inner img {
   max-height: 60vh;
   object-fit: cover;
@@ -80,24 +75,41 @@ li{
   height: 100%;
 }
 
-
-
 #box1 {
-  display: flexbox;
-  margin:100px;
+
+  margin:50px;
   padding: 0;
-  font-family: 'Roboto Flex', sans-serif;
- /* background-image: linear-gradient(to right top, #090909, #10174a, #25a6bd, #0a4a69,  #0d6c32);*/
+  font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
     flex-wrap: wrap;
     align-items: center;
   justify-content: center;
 
-    /*height:100vh;*/
+}
+
+
+#box2 {
+
+  background-image: url("assets/Fondo5_.jpg");
+text-align: center;
+
+}
+
+
+/*titulo de secciones*/
+h1{
+  text-align:center;
+  font-family: 'Ubuntu', sans-serif;
+  color: black;
+
+  background-color: white;
+justify-content: center;  
 }
 
 
 
+
 footer {
+    border:solid rgb(13, 13, 13) 2px;
 }
 /*Si llega a 320px cambia a esta propiedad */
 @media screen and (max-width: 320px){
@@ -112,6 +124,3 @@ footer {
   
 
 }
-
-
-
