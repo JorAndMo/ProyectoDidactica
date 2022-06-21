@@ -9,3 +9,7 @@ function abrirPopup(){
 function cerrarPopup(){
 
 }
+
+$(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+  })

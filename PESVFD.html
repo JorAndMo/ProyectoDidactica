@@ -2,104 +2,83 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8" />
-    <link rel="stylesheet" href="PESVFD.css">
-    <link rel="stylesheet" href="PESVFD.scss">
-      <title>Didácticas digitales!</title>
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <script> src = "PESVFD.js"</script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
-
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <title>Didácticas digitales!</title>
+  <script> src = "script.js"</script>
+ 
 </head>
 
 <body>
-    <header>
-        <nav>
-            <div id="botones">
-                <figure>
-                    <img id="logo" src="assets/LOGO HORIZONTAL PAR OFFICE 2).png" , alt="Logo de Segispro" />
-                </figure>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-white sticky-top">
+      </div>
+        <div class="container">   
+          <img id="logo" src="assets/LOGO HORIZONTAL PAR OFFICE 2).png" , alt="Imagen Logo de Segispro" />
+      </div>
+      <div class="collapse navbar-collapse" id="navbar"> 
+      <ul class="navbar-nav ml-auto">
+        <a href="index.html">
+          <li class="nav-item">Home</li>
+        </a>
+        <a href="https://www.segispro.com/">
+          <li>WEB</li>
+        </a>
 
-                <ul>
-                    <a href="index.html">
-                        <li>Home</li>
-                    </a>
-                    <a href="https://www.segispro.com/">
-                        <li>Pagina web</li>
-                    </a>
+        <a href="#box3">
+          <li>Profesionales</li>
+        </a>
+        <a href="#box4">
+          <li>Contacto</li>
+        </a>
+      </ul>
+    </div>
+    </nav>
 
-                    <a href="#box3">
-                        <li>Profesionales</li>
-                    </a>
-                    <a href="#box4">
-                        <li>Contacto</li>
-                    </a>
-                </ul>
-        </nav>
-    </header>
-    <main>
-        <section>
-            <div id="box1">
-                
-                <div id="options">
-                    <h1>Actividades Interactivas</h1>
-                    <div class="row row-cols-1 row-cols-md-3 g-4">
-                        <div class="col">
-                          <div class="card h-100">
-                            <img src="assets/vial.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                              <h5 class="card-title">Card title</h5>
-                              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col">
-                          <div class="card h-100">
-                            <img src="assets/SGSST.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                              <h5 class="card-title">Card title</h5>
-                              <p class="card-text">This is a short card.</p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col">
-                          <div class="card h-100">
-                            <img src="assets/Auditoria.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                              <h5 class="card-title">Card title</h5>
-                              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col">
-                          <div class="card h-100">
-                            <img src="..." class="card-img-top" alt="...">
-                            <div class="card-body">
-                              <h5 class="card-title">Card title</h5>
-                              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
 
-                </div>
+  </header>
+
+  <main id="main">
+    <div id="carousel" class="carousel slide carousel-fade" data-ride="carousel" data-pause="false">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block w-100" src="assets/Fondo5.jpg" alt="Imagen didactiva 1">
+        </div>
+        <div class="overlay">
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-md-6 offset-md-6 text-center text-md-right">
+                <h2>PLAN ESTRATÉGICO DE SEGURIDAD VIAL</h2>
+                <p class="d-none d-md-block">
+                  La resolución 1565 de 2014 reglamento el Plan Estratégico de Seguridad Vial para las organizaciones, dada su importancia y la adecuada implementación se hará un recorrido por cada uno de los elementos claves que compone este plan. Bienvenidos!
+                </p>
+              </div>
+              
             </div>
+           
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <section id="box1">  
+      <div class="row">
+       
 
+    
+      </div>
         </section>
 
-        <section>
-   
-
-        </section>
 
 
-        <footer>
-            <h6>
-                Todos los derechos reservados
-            </h6>
-        </footer>
-    </main>
+    <footer>
+      <h6>
+        Todos los derechos reservados
+      </h6>
+    </footer>
+  </main>
 
 </body>
 
